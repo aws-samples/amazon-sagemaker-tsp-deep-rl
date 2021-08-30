@@ -33,7 +33,7 @@
 
 4. View the streamlit app via a browser at https://$YourInstance$.notebook.$YourRegion$.sagemaker.aws/proxy/8501/
 
-![Streamlit Demo](pics/2021-08-11-routing-blog-demo-2-low.gif)
+![2021-08-11-routing-blog-demo-2-low](https://user-images.githubusercontent.com/6405428/131402564-3dd1ac21-4566-42c8-9b20-3e218b92b333.gif)
 
 
 ## Acknowledgements
