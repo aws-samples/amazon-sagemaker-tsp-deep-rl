@@ -46,4 +46,6 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 
 ## License
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+This code is licensed under the MIT-0 License. See the LICENSE file.
+
+This code downloads and installs Miniconda. See here for the [end-user-license-agreement](miniconda-eula.txt).
