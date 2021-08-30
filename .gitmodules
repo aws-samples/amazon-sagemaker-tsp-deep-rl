@@ -1,0 +1,3 @@
+[submodule "learning-tsp"]
+	path = learning-tsp
+	url = https://github.com/chaitjo/learning-tsp.git
