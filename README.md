@@ -22,11 +22,11 @@ git clone --recurse-submodules https://github.com/aws-samples/amazon-sagemaker-t
 
 3. Combine relevant files into single source directory for SageMaker.
 
-SageMaker requires the specification of a single source directory for training and inference as well as a tar.gz file.
+This will combine all of the training and inference code in a single source directory and create a model.tar.gz file for inference with a pre-trained model.
+
 ```
 ./set_up_sagemaker.sh
 ```
-
 
 
 ## Training (Optional)
