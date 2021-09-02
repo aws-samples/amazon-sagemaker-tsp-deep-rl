@@ -1,10 +1,36 @@
 # Getting Started
 
-## Distributed Training (Optional)
+This repository demonstrates an example of Amazon SageMaker for solving the Travelling Salesperson Problem using Deep Reinforcement Learning.
 
-[pytorch_smdataparallel_tsp_demo.ipynb](pytorch_smdataparallel_tsp_demo.ipynb)
+Blog post: [Solving the Travelling Salesperson Problem with deep reinforcement learning on Amazon SageMaker](.)
 
-## Inference (Local, Endpoint and Batch Transform)
+For additional detail check out the paper: [Learning TSP Requires Rethinking Generalization](https://arxiv.org/abs/2006.07054).
+
+## Clone and setup
+
+1. Clone the repository with submodule.
+
+```
+git clone --recurse-submodules https://github.com/aws-samples/amazon-sagemaker-tsp-deep-rl.git
+```
+
+2. Combine relevant files into single source directory for SageMaker.
+
+```
+./set_up_sagemaker.sh
+```
+## Training (Optional)
+
+How to train on multiple GPU nodes on SageMaker. This step is optional.
+
+[pytorch_training.ipynb](pytorch_smdataparallel_tsp_demo.ipynb)
+
+## Inference 
+
+How to run inference in three different ways:
+1. Locally on the SageMaker notebook instance
+2. SageMaker Endpoint 
+3. Batch Transform
 
 [pytorch_inference.ipynb](pytorch_inference.ipynb)
 
