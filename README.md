@@ -1,24 +1,33 @@
-# Getting Started
+# Solving the Travelling Salesperson Problem with deep reinforcement learning on Amazon SageMaker
 
-This repository demonstrates an example of Amazon SageMaker for solving the Travelling Salesperson Problem using Deep Reinforcement Learning.
+This repository includes the code for the AWS Open Source blog: [Solving the Travelling Salesperson Problem with deep reinforcement learning on Amazon SageMaker](.)
 
-Blog post: [Solving the Travelling Salesperson Problem with deep reinforcement learning on Amazon SageMaker](.)
+For additional detail check out the paper (Joshi et al., 2021): [Learning TSP Requires Rethinking Generalization](https://arxiv.org/abs/2008.07054).
 
-For additional detail check out the paper: [Learning TSP Requires Rethinking Generalization](https://arxiv.org/abs/2006.07054).
+## Getting Started
 
-## Clone and setup
+1. Create a SageMaker notebook instance
 
-1. Clone the repository with submodule.
+This repository is meant to be run on a SageMaker notebook instance. 
+
+See the [aws documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html) for additional  details.
+
+2. Clone the repository with submodule.
+
+This will clone the current repository as well as the submodule repository: [learning-tsp](https://github.com/chaitjo/learning-tsp).
 
 ```
 git clone --recurse-submodules https://github.com/aws-samples/amazon-sagemaker-tsp-deep-rl.git
 ```
 
-2. Combine relevant files into single source directory for SageMaker.
+3. Combine relevant files into single source directory for SageMaker.
+
+SageMaker requires the specification of a single source directory for training and inference.
 
 ```
 ./set_up_sagemaker.sh
 ```
+
 ## Training (Optional)
 
 How to train on multiple GPU nodes on SageMaker. This step is optional.
@@ -28,7 +37,7 @@ How to train on multiple GPU nodes on SageMaker. This step is optional.
 ## Inference 
 
 How to run inference in three different ways:
-1. Locally on the SageMaker notebook instance
+1. Locally on the notebook instance
 2. SageMaker Endpoint 
 3. Batch Transform
 
