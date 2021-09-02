@@ -22,15 +22,20 @@ git clone --recurse-submodules https://github.com/aws-samples/amazon-sagemaker-t
 
 3. Combine relevant files into single source directory for SageMaker.
 
-SageMaker requires the specification of a single source directory for training and inference.
-
+SageMaker requires the specification of a single source directory for training and inference as well as a tar.gz file.
 ```
 ./set_up_sagemaker.sh
 ```
 
+
+
 ## Training (Optional)
 
-How to train on multiple GPU nodes on SageMaker. This step is optional.
+How to train on multiple GPU nodes on SageMaker. 
+
+This step is optional.
+
+To run training you need to have 18-19 GB of available disk space on your notebook instance to download the training data.
 
 [pytorch_training.ipynb](pytorch_smdataparallel_tsp_demo.ipynb)
 
