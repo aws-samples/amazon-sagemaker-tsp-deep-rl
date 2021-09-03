@@ -37,7 +37,7 @@ This step is optional.
 
 To run training you need to have 18-19 GB of available disk space on your notebook instance to download the training data.
 
-[pytorch_training.ipynb](pytorch_smdataparallel_tsp_demo.ipynb)
+[pytorch_training.ipynb](notebooks/pytorch_smdataparallel_tsp_demo.ipynb)
 
 ## Inference 
 
@@ -46,7 +46,7 @@ How to run inference in three different ways:
 2. SageMaker Endpoint 
 3. Batch Transform
 
-[pytorch_inference.ipynb](pytorch_inference.ipynb)
+[pytorch_inference.ipynb](notebooks/pytorch_inference.ipynb)
 
 ## Streamlit Demo
 
