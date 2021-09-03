@@ -25,7 +25,7 @@ git clone --recurse-submodules https://github.com/aws-samples/amazon-sagemaker-t
 This will combine all of the training and inference code in a single source directory and create a model.tar.gz file for inference with a pre-trained model.
 
 ```
-./set_up_sagemaker.sh
+scripts/set_up_sagemaker.sh
 ```
 
 
@@ -52,11 +52,13 @@ How to run inference in three different ways:
 
 1. Update the Jupyter Notebook instance environment for hosting streamlit.
 
-    `set_up_streamlit.sh`
+    `scripts/set_up_streamlit.sh`
     
 2. Build the conda python environment for the streamlit app
 
-    `./build_env.sh`
+    `scripts/build_env.sh`
+
+
 
 3. Run the steamlit app
 
@@ -68,7 +70,7 @@ How to run inference in three different ways:
     source "$WORKING_DIR/miniconda/bin/activate"
     conda activate $ENV_NAME
     
-    streamlit run streamlit_demo.py
+    streamlit run src/streamlit_demo.py
     ```
 
 4. View the streamlit app via a browser at https://$YourInstance$.notebook.$YourRegion$.sagemaker.aws/proxy/8501/
