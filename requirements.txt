@@ -1,0 +1,4 @@
+sagemaker>=2.59
+tqdm
+nb_black
+gdown
