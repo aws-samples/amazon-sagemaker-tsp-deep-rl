@@ -1,0 +1,19 @@
+name: tsp_deep_rl
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.6
+  - pytorch=1.8.1
+  - pip:
+    - pandas==1.1.5
+    - s3fs==2021.7.0
+    - scipy==1.5.4
+    - tqdm==4.61.0
+    - requests==2.25.1
+    - sagemaker==2.44.0 
+    - streamlit==0.84.2
+    - healpy==1.15.0
+    - joblib==1.0.1
+    - nb_black==1.0.7
+    - gdown==3.13

@@ -20,7 +20,13 @@ This will clone the current repository as well as the submodule repository: [lea
 git clone --recurse-submodules https://github.com/aws-samples/amazon-sagemaker-tsp-deep-rl.git
 ```
 
-3. Combine relevant files into single source directory for SageMaker.
+3. Create the virtual environment and install dependencies
+
+```
+scripts/build_env.sh
+```
+
+4. Combine relevant files into single source directory for SageMaker.
 
 This will combine all of the training and inference code in a single source directory and create a model.tar.gz file for inference with a pre-trained model.
 
@@ -54,13 +60,8 @@ How to run inference in three different ways:
 
     `scripts/set_up_streamlit.sh`
     
-2. Build the conda python environment for the streamlit app
 
-    `scripts/build_env.sh`
-
-
-
-3. Run the steamlit app
+2. Run the steamlit app
 
     ```
     WORKING_DIR=./.myenv
