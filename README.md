@@ -23,6 +23,8 @@ git clone --recurse-submodules https://github.com/aws-samples/amazon-sagemaker-t
 
 3. Create the virtual environment and install dependencies
 
+This would be a good time to grab a coffee or tea. This step takes a few minutes to run.
+
 ```
 cd amazon-sagemaker-tsp-deep-rl
 scripts/build_env.sh
