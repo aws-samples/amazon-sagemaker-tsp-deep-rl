@@ -22,7 +22,7 @@ git clone --recurse-submodules https://github.com/aws-samples/amazon-sagemaker-t
 cd amazon-sagemaker-tsp-deep-rl
 ```
 
-From here on out, scripts are to be run from the project root.
+From here on out, scripts are to be run from the git project root.
 
 **3. Create the virtual environment and install dependencies.**
 
@@ -31,6 +31,8 @@ scripts/build_env.sh
 ```
 
 This would be a good time to grab a coffee or tea. This step takes a few minutes to run.
+
+This step does not need to be repeated on notebook restart. See [Restarting the notebook](#restarting-the-notebook)
 
 **4. Combine relevant files into single source directory for SageMaker.**
 
@@ -86,6 +88,14 @@ Go to `https://$YourInstance$.notebook.$YourRegion$.sagemaker.aws/proxy/8501/`
 
 ![2021-08-11-routing-blog-demo-2-low](https://user-images.githubusercontent.com/6405428/131402564-3dd1ac21-4566-42c8-9b20-3e218b92b333.gif)
 
+## Restarting the notebook
+
+After you start/stop a SageMaker notebook instance, you do not need to re-install the packages. Simply open a SageMaker terminal session and run:
+
+```
+cd SageMaker/amazon-sagemaker-tsp-deep-rl
+scripts/start_env.sh
+```
 
 ## Acknowledgements
 
