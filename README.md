@@ -12,17 +12,19 @@ This repository is meant to be run on a SageMaker notebook instance.
 
 See the [aws documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html) for additional  details.
 
-2. Clone the repository with submodule.
+2. Clone the repository with submodule into the SageMaker directory
 
 This will clone the current repository as well as the submodule repository: [learning-tsp](https://github.com/chaitjo/learning-tsp).
 
 ```
+cd SageMaker
 git clone --recurse-submodules https://github.com/aws-samples/amazon-sagemaker-tsp-deep-rl.git
 ```
 
 3. Create the virtual environment and install dependencies
 
 ```
+cd amazon-sagemaker-tsp-deep-rl
 scripts/build_env.sh
 ```
 
