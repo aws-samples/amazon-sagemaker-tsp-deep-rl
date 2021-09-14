@@ -19,16 +19,18 @@ This will clone the current repository as well as the submodule repository: [lea
 ```
 cd SageMaker
 git clone --recurse-submodules https://github.com/aws-samples/amazon-sagemaker-tsp-deep-rl.git
+cd amazon-sagemaker-tsp-deep-rl
 ```
+
+From here on out, scripts are to be run from the project root.
 
 **3. Create the virtual environment and install dependencies.**
 
-This would be a good time to grab a coffee or tea. This step takes a few minutes to run.
-
 ```
-cd amazon-sagemaker-tsp-deep-rl
 scripts/build_env.sh
 ```
+
+This would be a good time to grab a coffee or tea. This step takes a few minutes to run.
 
 **4. Combine relevant files into single source directory for SageMaker.**
 
@@ -38,6 +40,11 @@ This will combine all of the training and inference code in a single source dire
 scripts/set_up_sagemaker.sh
 ```
 
+**5. Activate the new environment.**
+
+```
+scripts/start_env.sh
+```
 
 ## Training (Optional)
 
@@ -69,8 +76,6 @@ scripts/set_up_streamlit.sh
 **2. Run the steamlit app.**
 
 ```
-scripts/start_env.sh
-
 streamlit run src/streamlit_demo.py
 ```
 
