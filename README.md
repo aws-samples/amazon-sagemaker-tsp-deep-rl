@@ -6,13 +6,13 @@ For additional detail check out the paper (Joshi et al., 2021): [Learning TSP Re
 
 ## Getting Started
 
-1. Create a SageMaker notebook instance
+**1. Create a SageMaker notebook instance.**
 
 This repository is meant to be run on a SageMaker notebook instance. 
 
 See the [aws documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html) for additional  details.
 
-2. Clone the repository with submodule into the SageMaker directory
+**2. Clone the repository with submodule into the SageMaker directory.**
 
 This will clone the current repository as well as the submodule repository: [learning-tsp](https://github.com/chaitjo/learning-tsp).
 
@@ -21,7 +21,7 @@ cd SageMaker
 git clone --recurse-submodules https://github.com/aws-samples/amazon-sagemaker-tsp-deep-rl.git
 ```
 
-3. Create the virtual environment and install dependencies
+**3. Create the virtual environment and install dependencies.**
 
 This would be a good time to grab a coffee or tea. This step takes a few minutes to run.
 
@@ -30,7 +30,7 @@ cd amazon-sagemaker-tsp-deep-rl
 scripts/build_env.sh
 ```
 
-4. Combine relevant files into single source directory for SageMaker.
+**4. Combine relevant files into single source directory for SageMaker.**
 
 This will combine all of the training and inference code in a single source directory and create a model.tar.gz file for inference with a pre-trained model.
 
@@ -60,12 +60,11 @@ How to run inference in three different ways:
 
 ## Streamlit Demo
 
-1. Update the Jupyter Notebook instance environment for hosting streamlit.
+**1. Update the Jupyter Notebook instance environment for hosting streamlit.**
 
     `scripts/set_up_streamlit.sh`
     
-
-2. Run the steamlit app
+**2. Run the steamlit app.**
 
     ```
     WORKING_DIR=./.myenv
@@ -78,7 +77,9 @@ How to run inference in three different ways:
     streamlit run src/streamlit_demo.py
     ```
 
-4. View the streamlit app via a browser at https://$YourInstance$.notebook.$YourRegion$.sagemaker.aws/proxy/8501/
+**3. View the streamlit app via a browser.**
+
+Go to `https://$YourInstance$.notebook.$YourRegion$.sagemaker.aws/proxy/8501/`
 
 ![2021-08-11-routing-blog-demo-2-low](https://user-images.githubusercontent.com/6405428/131402564-3dd1ac21-4566-42c8-9b20-3e218b92b333.gif)
 
