@@ -62,20 +62,17 @@ How to run inference in three different ways:
 
 **1. Update the Jupyter Notebook instance environment for hosting streamlit.**
 
-    `scripts/set_up_streamlit.sh`
+```
+scripts/set_up_streamlit.sh
+```
     
 **2. Run the steamlit app.**
 
-    ```
-    WORKING_DIR=./.myenv
-    # get the env name
-    line=$(head -n 1 environment.yml)
-    ENV_NAME="${line/name:\ /}"
-    source "$WORKING_DIR/miniconda/bin/activate"
-    conda activate $ENV_NAME
-    
-    streamlit run src/streamlit_demo.py
-    ```
+```
+scripts/start_env.sh
+
+streamlit run src/streamlit_demo.py
+```
 
 **3. View the streamlit app via a browser.**
 
