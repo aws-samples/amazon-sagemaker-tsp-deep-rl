@@ -40,12 +40,6 @@ This will combine all of the training and inference code in a single source dire
 scripts/set_up_sagemaker.sh
 ```
 
-**5. Activate the new environment.**
-
-```
-scripts/start_env.sh
-```
-
 ## Training (Optional)
 
 How to train on multiple GPU nodes on SageMaker. 
@@ -72,10 +66,17 @@ How to run inference in three different ways:
 ```
 scripts/set_up_streamlit.sh
 ```
-    
+
 **2. Run the steamlit app.**
 
 ```
+WORKING_DIR=./.myenv
+# get the env name
+line=$(head -n 1 environment.yml)
+ENV_NAME="${line/name:\ /}"
+source "$WORKING_DIR/miniconda/bin/activate"
+conda activate $ENV_NAME
+
 streamlit run src/streamlit_demo.py
 ```
 
