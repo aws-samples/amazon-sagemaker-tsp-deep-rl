@@ -14,9 +14,7 @@ For additional explanation, see the forthcoming blog post: [Solving the Travelli
 
 **1. Create a SageMaker notebook instance.**
 
-This repository is meant to be run on a SageMaker notebook instance. 
-
-See the [aws documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html) for additional  details.
+This repository is meant to be run on a SageMaker notebook instance. For details on how to create a notebook instance, see the [aws documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html).
 
 **2. Clone the repository with submodule into the SageMaker directory.**
 
@@ -36,9 +34,7 @@ From here on out, scripts are to be run from the git project root.
 scripts/build_env.sh
 ```
 
-This would be a good time to grab a coffee or tea. This step takes a few minutes to run.
-
-This step does not need to be repeated on notebook restart. See [Restarting the notebook](#restarting-the-notebook)
+This would be a good time to grab a coffee or tea. This step takes a few minutes to run. This step does not need to be repeated on notebook restart (see [Restarting the notebook](#restarting-the-notebook)).
 
 **4. Combine relevant files into single source directory for SageMaker.**
 
@@ -50,7 +46,7 @@ scripts/set_up_sagemaker.sh
 
 ## Training (Optional)
 
-Opon the notebook named [pytorch_training.ipynb](notebooks/pytorch_smdataparallel_tsp_demo.ipynb) to see how to train on multiple GPU nodes on SageMaker. 
+Opon the notebook named [notebooks/pytorch_training.ipynb](notebooks/pytorch_smdataparallel_tsp_demo.ipynb) to see how to train on multiple GPU nodes on SageMaker. 
 
 Note that this step is optional.
 
@@ -58,7 +54,7 @@ To run training you need to have 18-19 GB of available disk space on your notebo
 
 ## Inference 
 
-Open the notebook titled [pytorch_inference.ipynb](notebooks/pytorch_inference.ipynb) to see how to run inference in three different ways:
+Open the notebook titled [notebooks/pytorch_inference.ipynb](notebooks/pytorch_inference.ipynb) to see how to run inference in three different ways:
 
 1. Locally on the notebook instance
 2. SageMaker Endpoint
@@ -115,3 +111,10 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 This code is licensed under the MIT-0 License. See the LICENSE file.
 
 This code downloads and installs Miniconda. See here for the [end-user-license-agreement](miniconda-eula.txt).
+
+## Authors
+
+* [Yin Song](https://github.com/yinsong1986)
+* [Chen Wu](https://github.com/chenwuperth)
+* [Josiah Davis](https://github.com/josiahdavis)
+* [Eden Duthie](https://github.com/edenduthie)
