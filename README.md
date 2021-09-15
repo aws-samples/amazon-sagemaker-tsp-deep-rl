@@ -1,8 +1,14 @@
 # Solving the Travelling Salesperson Problem with deep reinforcement learning on Amazon SageMaker
 
-This repository includes the code for the AWS Open Source blog: [Solving the Travelling Salesperson Problem with deep reinforcement learning on Amazon SageMaker](.)
+## Introduction
 
-For additional detail check out the paper (Joshi et al., 2021): [Learning TSP Requires Rethinking Generalization](https://arxiv.org/abs/2008.07054).
+The [Travelling Salesperson Problem ](https://en.wikipedia.org/wiki/Travelling_salesman_problem) (TSP) is one of the most popular [NP-hard](https://xlinux.nist.gov/dads/HTML/nphard.html) combinatorial problems in the  theoretical computer science and operations research (OR) community. It asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?".
+
+The problem has been studied for decades, and many traditional optimization algorithms have been proposed to solve it, such as [dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming) and [branch-and-bound](https://en.wikipedia.org/wiki/Branch_and_bound). Although these optimization algorithms are capable of solving TSP with dozens of nodes, it is usually intractable to use these algorithms to solve optimally above thousands of nodes on modern computers due to their exponential execution times.
+
+In this repository, we demonstrate show how to train, deploy, and make inferences using deep reinforcement learning to solve the Travelling Salesperson Problem.
+
+For additional explanation, see the forthcoming blog post: [Solving the Travelling Salesperson Problem with deep reinforcement learning on Amazon SageMaker](.)
 
 ## Getting Started
 
@@ -44,22 +50,19 @@ scripts/set_up_sagemaker.sh
 
 ## Training (Optional)
 
-How to train on multiple GPU nodes on SageMaker. 
+Opon the notebook named [pytorch_training.ipynb](notebooks/pytorch_smdataparallel_tsp_demo.ipynb) to see how to train on multiple GPU nodes on SageMaker. 
 
-This step is optional.
+Note that this step is optional.
 
 To run training you need to have 18-19 GB of available disk space on your notebook instance to download the training data.
 
-[pytorch_training.ipynb](notebooks/pytorch_smdataparallel_tsp_demo.ipynb)
-
 ## Inference 
 
-How to run inference in three different ways:
-1. Locally on the notebook instance
-2. SageMaker Endpoint 
-3. Batch Transform
+Open the notebook titled [pytorch_inference.ipynb](notebooks/pytorch_inference.ipynb) to see how to run inference in three different ways:
 
-[pytorch_inference.ipynb](notebooks/pytorch_inference.ipynb)
+1. Locally on the notebook instance
+2. SageMaker Endpoint
+3. Batch Transform
 
 ## Streamlit Demo
 
@@ -100,6 +103,8 @@ scripts/start_env.sh
 ## Acknowledgements
 
 This code base is an extension of Chaitanya Joshi's excellent repo [learning-tsp](https://github.com/chaitjo/learning-tsp).
+
+For additional detail check out the paper (Joshi et al., 2021): [Learning TSP Requires Rethinking Generalization](https://arxiv.org/abs/2008.07054).
 
 ## Security
 
