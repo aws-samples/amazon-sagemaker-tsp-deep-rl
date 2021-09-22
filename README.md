@@ -46,7 +46,7 @@ scripts/set_up_sagemaker.sh
 
 ## Training (Optional)
 
-Opon the notebook named [notebooks/pytorch_training.ipynb](notebooks/pytorch_smdataparallel_tsp_demo.ipynb) to see how to train on multiple GPU nodes on SageMaker. 
+Open the notebook named [notebooks/pytorch_training.ipynb](notebooks/pytorch_training.ipynb) to see how to train on multiple GPU nodes on SageMaker. 
 
 Note that this step is optional.
 
