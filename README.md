@@ -8,7 +8,7 @@ The problem has been studied for decades, and many traditional optimization algo
 
 In this repository, we demonstrate show how to train, deploy, and make inferences using deep reinforcement learning to solve the Travelling Salesperson Problem.
 
-For additional explanation, see the forthcoming blog post: [Solving the Travelling Salesperson Problem with deep reinforcement learning on Amazon SageMaker](.)
+For additional explanation, see the forthcoming blog post: [Solving the Travelling Salesperson Problem with deep reinforcement learning on Amazon SageMaker](https://aws.amazon.com/blogs/opensource/solving-the-traveling-salesperson-problem-with-deep-reinforcement-learning-on-amazon-sagemaker/)
 
 ## Getting Started
 
