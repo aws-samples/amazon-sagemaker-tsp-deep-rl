@@ -23,4 +23,4 @@ conda config --add envs_dirs "$PWD/$WORKING_DIR/miniconda/envs"
 conda env list
 
 # Required for notebook to show the environment
-sudo initctl restart jupyter-server --no-wait
+sudo systemctl restart jupyter-server
