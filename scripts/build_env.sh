@@ -30,6 +30,9 @@ conda activate $ENV_NAME
 # add this as a kernel
 pip install ipykernel
 
+#IPython 8.0.1, 7.31.1 and 5.11 onwards disables the ipython_config.py
+pip install -e .
+
 # Cleanup
 conda deactivate
 source "${WORKING_DIR}/miniconda/bin/deactivate"
